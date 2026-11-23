@@ -1,0 +1,42 @@
+Anoy's Pixel GitHub Profile — cara pasang ♡
+============================================
+
+Isi folder:
+- README.md
+- assets/              (header, judul, kartu about, chips, projects, footer, pixel-garden — semua SVG pixel art)
+- tools/               (skrip untuk bikin ulang assets, opsional)
+- .github/workflows/snake.yml
+
+Cara pasang:
+1. Buat repository PUBLIC dengan nama persis sama seperti username: laupiy
+2. Upload README.md ke root repository.
+3. Upload seluruh folder assets/ (jangan diganti namanya). Folder tools/ boleh ikut atau tidak.
+4. Upload .github/workflows/snake.yml ke path yang sama persis.
+5. Buka Settings > Actions > General > Workflow permissions,
+   pilih "Read and write permissions", lalu Save.
+6. Buka tab Actions, aktifkan workflow kalau diminta,
+   lalu jalankan "Generate contribution snake" (Run workflow).
+7. Setelah sukses, branch "output" akan berisi snake.svg & snake-dark.svg.
+8. Buka https://github.com/laupiy untuk lihat hasilnya.
+
+Font & pixel art:
+- Font pixel: "Press Start 2P" (judul besar) dan "Pixelify Sans" (teks biasa). Keduanya
+  lisensi OFL dan sudah ditanam (embedded) di dalam tiap SVG, jadi tampil sama di semua device.
+- Semua gambar (langit pink malam di header, padang sakura di footer, kelinci, ikon project)
+  digambar dari kotak-kotak pixel oleh skrip di tools/ — tidak ada file gambar biasa.
+- pastel-flowers.gif diganti pixel-garden.svg (bunga pixel + kupu-kupu).
+
+Mau ubah teks / warna / ukuran?
+  pip install fonttools numpy
+  python tools/make_header.py assets/header.svg    (header)
+  python tools/make_rest.py                        (judul, about, chips, projects, footer, garden)
+  (jalankan dari folder utama repo; teks ada di bagian atas tiap fungsi make_*)
+- Teks di kartu about ada di make_about(), kartu project di make_projects(), judul di TITLES.
+
+Catatan:
+- GitHub tidak mengizinkan custom font di teks markdown biasa; makanya semua teks dibuat sebagai SVG.
+- Teks mengetik (typing) sekarang memakai Press Start 2P lewat layanan eksternal.
+  Statistik, streak, dan trophy juga layanan eksternal (fontnya tidak bisa diganti dan kadang lambat
+  / kena rate-limit — itu normal). Border-nya sudah dibuat kotak (border_radius=0) biar nyambung dengan gaya pixel.
+- Skill icons hanya contoh. Simpan yang memang kamu pakai/pelajari saja.
+- Animasi otomatis berhenti untuk pengguna yang mengaktifkan "reduce motion".
