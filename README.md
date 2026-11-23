@@ -43,12 +43,7 @@
 
 <br/>
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=laupiy&show_icons=true&hide_border=true&border_radius=0&bg_color=fff7f9&title_color=ec8fa5&icon_color=8fcbd4&text_color=6b5a7a&ring_color=ec8fa5&cache_seconds=86400" alt="Anoy's GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=laupiy&layout=compact&hide_border=true&border_radius=0&bg_color=fff7f9&title_color=ec8fa5&text_color=6b5a7a&cache_seconds=86400" alt="Top languages" />
-
-<img src="https://streak-stats.demolab.com?user=laupiy&hide_border=true&border_radius=0&background=FFF7F9&ring=EC8FA5&fire=EC8FA5&currStreakLabel=EC8FA5&sideLabels=8FCBD4&currStreakNum=6B5A7A&sideNums=6B5A7A&dates=A89BB5&stroke=FFD1DC" alt="GitHub streak" />
-
-<img src="https://github-profile-trophy.vercel.app/?username=laupiy&theme=flat&no-frame=true&no-bg=true&margin-w=8&column=6" alt="GitHub trophies" />
+<img src="assets/garden-stats.svg" width="100%" alt="GitHub stats, top languages and contribution streak" />
 
 <br/><br/>
 
