@@ -35,7 +35,7 @@
 
 <img src="assets/projects.svg" width="100%" alt="AquaVoice, Antara Aroma, SmartBorrow, Vision-to-Audio Bridge" />
 
-<sub>✿ some projects are still blooming — more little creations coming soon! ✿</sub>
+<img src="assets/note-blooming.svg" alt="some projects are still blooming - more little creations coming soon!" />
 
 <br/><br/>
 
