@@ -1,6 +1,7 @@
 import random, math
 import numpy as np
 from pixlib import *
+from photo import PHOTO, photo_image
 
 ROSE, PLUM, PLUM2 = '#e0678d', '#8b3d7c', '#5b2a5e'
 
@@ -104,10 +105,13 @@ def make_about():
     d.add(dots)
     # avatar
     d.add(px_frame(32, 64, 184, 172, 4, '#ffffff', ROSE, '#f3b8cc', 4))
-    sc = mini_scene()
-    d.add(f'<g transform="translate(36 68) scale(4)">{sc.svg()}</g>')
-    bunny, eo, es, _ = make_bunny()
-    d.add(f'<g transform="translate({36 + 8 * 4} {68 + 5 * 4}) scale(4)"><g class="bob">{bunny.svg()}<g class="bo">{eo.svg()}</g><g class="bs">{es.svg()}</g></g></g>')
+    if PHOTO:   # fotomu menggantikan kelinci
+        d.add(f'<g transform="translate(36 68)">{photo_image(PHOTO, 176, 164)}</g>')
+    else:
+        sc = mini_scene()
+        d.add(f'<g transform="translate(36 68) scale(4)">{sc.svg()}</g>')
+        bunny, eo, es, _ = make_bunny()
+        d.add(f'<g transform="translate({36 + 8 * 4} {68 + 5 * 4}) scale(4)"><g class="bob">{bunny.svg()}<g class="bo">{eo.svg()}</g><g class="bs">{es.svg()}</g></g></g>')
     sp = make_sparkle('#ffffff', '#ffd6e8')
     d.add(f'<g transform="translate(46 78) scale(3)"><g class="tw">{sp.svg()}</g></g>')
     # badge

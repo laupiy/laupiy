@@ -115,18 +115,6 @@ def build(out):
     d.add(spark_svg)
     d.add('</g>')
 
-    # bunny on the grass
-    bx, by = 770, 128
-    d.add(f'<g transform="translate({bx} {by}) scale(5)"><g class="bob">{bunny.svg()}'
-          f'<g class="bo">{eo.svg()}</g><g class="bs">{es.svg()}</g></g></g>')
-    # rising hearts
-    hs = sprite(HEART, {'X': '#ff8fa8'})
-    for i, (x, y, dl) in enumerate(((742, 150, 0), (925, 175, -1.4), (950, 120, -2.6))):
-        small = Grid(3, 3)
-        for xx, yy in ((0, 0), (2, 0), (0, 1), (1, 1), (2, 1), (1, 2)):
-            small.set(xx, yy, '#ffffff')
-        d.add(f'<g transform="translate({x} {y}) scale(4)"><g class="hr" style="animation-delay:{dl}s">{small.svg()}</g></g>')
-
     d.add('<g transform="scale(5)">')
     d.add(f'<g class="sa">{fa.svg()}</g><g class="sb">{fb.svg()}</g>')
     d.add(front.svg())
