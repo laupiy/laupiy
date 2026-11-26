@@ -1,0 +1,40 @@
+{
+ "stars": 0,
+ "commits": 40,
+ "prs": 1,
+ "issues": 0,
+ "contributed": 2,
+ "langs": [
+  [
+   "JavaScript",
+   49.11469198805321,
+   "#f1e05a"
+  ],
+  [
+   "TypeScript",
+   28.64844729512464,
+   "#3178c6"
+  ],
+  [
+   "Python",
+   10.92821632782131,
+   "#3572A5"
+  ],
+  [
+   "HTML",
+   6.1352819070428435,
+   "#e34c26"
+  ],
+  [
+   "CSS",
+   5.1733624819579935,
+   "#663399"
+  ]
+ ],
+ "total_contrib": 53,
+ "since": "Nov 23, 2025",
+ "cur_streak": 0,
+ "cur_date": "-",
+ "best_streak": 1,
+ "best_date": "Jan 2"
+}
